@@ -1,0 +1,245 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{DD}-{MM}-{YYYY}-{title}",
+ "creation": "2024-06-28 17:32:31.215475",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "\u0627\u0644\u062a\u0641\u0627\u0635\u064a\u0644_tab",
+  "\u062a\u0641\u0627\u0635\u064a\u0644_section",
+  "\u062a\u0641\u0627\u0635\u064a\u0644_column",
+  "title",
+  "\u0627\u0633\u0645_\u0627\u0644\u0645\u0648\u0643\u0644",
+  "date_of_case",
+  "appointment_of_lawcase",
+  "id_img",
+  "passport_img",
+  "expected_cost",
+  "\u0639\u0645\u0644\u0629_\u0627\u0644\u062f\u0641\u0639",
+  "\u0645\u0643\u0627\u0646_\u0627\u0644\u062f\u0639\u0648\u0649_\u0648\u0627\u0644\u062d\u0627\u0644\u0647_column",
+  "court_name",
+  "status_of_lawcase",
+  "range_of_lawing",
+  "type_of_lawcase",
+  "extra_details",
+  "\u0627\u0644\u062f\u0641\u0639_tab",
+  "payments",
+  "\u0627\u0644\u0639\u0646\u0648\u0627\u0646_\u0648\u0627\u0644\u0627\u0634\u062e\u0627\u0635_\u0627\u0644\u0645\u0631\u062a\u0628\u0637\u064a\u0646_tab",
+  "customer_address",
+  "column_break_ugph",
+  "contact_person",
+  "contact_mobile",
+  "\u0634\u0631\u0648\u0637_tab",
+  "tc_name",
+  "terms",
+  "\u0645\u0639\u0644\u0648\u0645\u0627\u062a_\u0627\u0636\u0627\u0641\u064a\u0629_tab",
+  "sales_team",
+  "currency_hftp",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "\u062a\u0641\u0627\u0635\u064a\u0644_section",
+   "fieldtype": "Section Break",
+   "label": "\u062a\u0641\u0627\u0635\u064a\u0644"
+  },
+  {
+   "fieldname": "expected_cost",
+   "fieldtype": "Currency",
+   "label": "\u0631\u0633\u0645 \u0627\u0644\u0642\u0636\u064a\u0629"
+  },
+  {
+   "fieldname": "date_of_case",
+   "fieldtype": "Date",
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0633\u062a\u0644\u0627\u0645 \u0627\u0644\u0642\u0636\u064a\u0629"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0639\u0646\u0648\u0627\u0646 \u0627\u0644\u0642\u0636\u064a\u0629",
+   "reqd": 1
+  },
+  {
+   "fieldname": "\u0627\u0644\u062a\u0641\u0627\u0635\u064a\u0644_tab",
+   "fieldtype": "Tab Break",
+   "label": "\u0627\u0644\u062a\u0641\u0627\u0635\u064a\u0644 "
+  },
+  {
+   "fieldname": "\u0627\u0644\u062f\u0641\u0639_tab",
+   "fieldtype": "Tab Break",
+   "label": "\u0627\u0644\u062f\u0641\u0639"
+  },
+  {
+   "fieldname": "payments",
+   "fieldtype": "Table",
+   "label": "\u0627\u0644\u062f\u0641\u0639\u0627\u062a",
+   "options": "Sales Invoice Payment"
+  },
+  {
+   "fieldname": "\u0627\u0644\u0639\u0646\u0648\u0627\u0646_\u0648\u0627\u0644\u0627\u0634\u062e\u0627\u0635_\u0627\u0644\u0645\u0631\u062a\u0628\u0637\u064a\u0646_tab",
+   "fieldtype": "Tab Break",
+   "label": "\u0627\u0644\u0639\u0646\u0648\u0627\u0646 \u0648\u0627\u0644\u0627\u0634\u062e\u0627\u0635 \u0627\u0644\u0645\u0631\u062a\u0628\u0637\u064a\u0646 "
+  },
+  {
+   "fieldname": "customer_address",
+   "fieldtype": "Link",
+   "label": "\u0639\u0646\u0648\u0627\u0646 \u0635\u0627\u062d\u0628 \u0627\u0644\u0642\u0636\u064a\u0629",
+   "options": "Address"
+  },
+  {
+   "fieldname": "column_break_ugph",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Link",
+   "label": "\u0634\u062e\u0635 \u0645\u0631\u062a\u0628\u0637 \u0628\u0635\u0627\u062d\u0628 \u0627\u0644\u0642\u0636\u064a\u0629",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "contact_mobile",
+   "fieldtype": "Small Text",
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0645\u0648\u0628\u0627\u064a\u0644",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "\u0634\u0631\u0648\u0637_tab",
+   "fieldtype": "Tab Break",
+   "label": "\u0634\u0631\u0648\u0637"
+  },
+  {
+   "fieldname": "tc_name",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0634\u0631\u0648\u0637",
+   "options": "Terms and Conditions"
+  },
+  {
+   "fieldname": "terms",
+   "fieldtype": "Text Editor",
+   "label": "\u062a\u0641\u0627\u0635\u064a\u0644 \u0627\u0644\u0634\u0631\u0648\u0637"
+  },
+  {
+   "fieldname": "\u0645\u0639\u0644\u0648\u0645\u0627\u062a_\u0627\u0636\u0627\u0641\u064a\u0629_tab",
+   "fieldtype": "Tab Break",
+   "label": "\u0627\u0644\u0645\u062d\u0627\u0645\u064a\u0646 \u0627\u0644\u0645\u0631\u062a\u0628\u0637\u064a\u0646 \u0628\u0627\u0644\u0642\u0636\u064a\u0629"
+  },
+  {
+   "fieldname": "sales_team",
+   "fieldtype": "Table",
+   "label": "\u0627\u0644\u0645\u062d\u0627\u0645\u064a\u0646 \u0627\u0644\u0645\u0633\u0624\u0648\u0644\u064a\u0646 \u0639\u0646 \u0627\u0644\u0642\u0636\u064a\u0629",
+   "options": "Sales Team"
+  },
+  {
+   "fieldname": "court_name",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_standard_filter": 1,
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u062d\u0643\u0645\u0647 ",
+   "options": "Courts"
+  },
+  {
+   "fieldname": "\u0639\u0645\u0644\u0629_\u0627\u0644\u062f\u0641\u0639",
+   "fieldtype": "Link",
+   "label": "\u0639\u0645\u0644\u0629 \u0627\u0644\u062f\u0641\u0639",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "\u0645\u0643\u0627\u0646_\u0627\u0644\u062f\u0639\u0648\u0649_\u0648\u0627\u0644\u062d\u0627\u0644\u0647_column",
+   "fieldtype": "Column Break",
+   "label": "\u0645\u0643\u0627\u0646 \u0627\u0644\u062f\u0639\u0648\u0649 \u0648\u0627\u0644\u062d\u0627\u0644\u0647"
+  },
+  {
+   "fieldname": "\u062a\u0641\u0627\u0635\u064a\u0644_column",
+   "fieldtype": "Column Break",
+   "label": "\u062a\u0641\u0627\u0635\u064a\u0644"
+  },
+  {
+   "fieldname": "range_of_lawing",
+   "fieldtype": "Link",
+   "label": "\u062f\u0631\u062c\u0629 \u0627\u0644\u062a\u0642\u0627\u0636\u064a",
+   "options": "Range of Lawing"
+  },
+  {
+   "fieldname": "type_of_lawcase",
+   "fieldtype": "Link",
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u062f\u0639\u0648\u0649",
+   "options": "Type of lawcase"
+  },
+  {
+   "fieldname": "extra_details",
+   "fieldtype": "Small Text",
+   "label": "\u062a\u0641\u0627\u0635\u064a\u0644 \u0627\u0636\u0627\u0641\u064a\u0647 \u0648\u0645\u0644\u0627\u062d\u0638\u0627\u062a"
+  },
+  {
+   "fieldname": "status_of_lawcase",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "label": "\u062d\u0627\u0644\u0647 \u0627\u0644\u062f\u0639\u0648\u0649",
+   "options": "Status of lowcase"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "CourtsCases",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "appointment_of_lawcase",
+   "fieldtype": "Datetime",
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u062c\u0644\u0633\u0629"
+  },
+  {
+   "fieldname": "id_img",
+   "fieldtype": "Attach",
+   "label": "\u0635\u0648\u0631\u0629 \u0627\u0644\u0647\u0648\u064a\u0629"
+  },
+  {
+   "fieldname": "passport_img",
+   "fieldtype": "Attach",
+   "label": "\u0635\u0648\u0631\u0629 \u062c\u0648\u0627\u0632 \u0627\u0644\u0633\u0641\u0631"
+  },
+  {
+   "fieldname": "\u0627\u0633\u0645_\u0627\u0644\u0645\u0648\u0643\u0644",
+   "fieldtype": "Link",
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u0648\u0643\u0644",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "currency_hftp",
+   "fieldtype": "Currency"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-07-15 01:58:54.663845",
+ "modified_by": "Administrator",
+ "module": "\u0627\u062f\u0627\u0631\u0629 \u0627\u0644\u0642\u0636\u0627\u064a\u0627",
+ "name": "CourtsCases",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

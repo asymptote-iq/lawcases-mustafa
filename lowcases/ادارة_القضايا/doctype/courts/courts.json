@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{court_name}",
+ "creation": "2024-06-25 23:03:52.401084",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "column_break_zrhy",
+  "court_name",
+  "link_status_of_lawcase",
+  "link_range_of_lawing",
+  "link_type_of_lowcase",
+  "default\u0640currency",
+  "status_of_lawcase",
+  "range_of_lawing",
+  "type_of_lawcase"
+ ],
+ "fields": [
+  {
+   "fieldname": "court_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u062d\u0643\u0645\u0647 ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "default\u0640currency",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0639\u0645\u0644\u0647 ",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "column_break_zrhy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "link_range_of_lawing.\u062f\u0631\u062c\u0647_\u0627\u0644\u062a\u0642\u0627\u0636\u064a",
+   "fieldname": "range_of_lawing",
+   "fieldtype": "Select",
+   "label": "\u062f\u0631\u062c\u0629 \u0627\u0644\u062a\u0642\u0627\u0636\u064a"
+  },
+  {
+   "fetch_from": "link_type_of_lowcase.\u0646\u0648\u0639_\u0627\u0644\u062f\u0639\u0648\u0649",
+   "fieldname": "type_of_lawcase",
+   "fieldtype": "Select",
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u062f\u0639\u0648\u0649"
+  },
+  {
+   "fieldname": "link_status_of_lawcase",
+   "fieldtype": "Link",
+   "label": "\u062d\u0627\u0644\u0629 \u0627\u0644\u062f\u0639\u0648\u0649",
+   "options": "Status of lowcase"
+  },
+  {
+   "fetch_from": "link_status_of_lawcase.status_of_case",
+   "fieldname": "status_of_lawcase",
+   "fieldtype": "Select",
+   "label": " \u062d\u0627\u0644\u0629 \u0627\u0644\u062f\u0639\u0648\u0649"
+  },
+  {
+   "fieldname": "link_range_of_lawing",
+   "fieldtype": "Link",
+   "label": "\u062f\u0631\u062c\u0629 \u0627\u0644\u062a\u0642\u0627\u0636\u064a",
+   "options": "Range of lawing"
+  },
+  {
+   "fieldname": "link_type_of_lowcase",
+   "fieldtype": "Link",
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u062f\u0639\u0648\u0649",
+   "options": "Type of lawcase"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-28 01:12:10.603062",
+ "modified_by": "Administrator",
+ "module": "\u0627\u062f\u0627\u0631\u0629 \u0627\u0644\u0642\u0636\u0627\u064a\u0627",
+ "name": "Courts",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
