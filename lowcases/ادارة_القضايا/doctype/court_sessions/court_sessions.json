@@ -1,0 +1,110 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-28 22:09:37.616877",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "number_of_roles",
+  "name_of_customer",
+  "adjective",
+  "name_of_rival",
+  "number_of_case",
+  "type_of_case",
+  "date_of_role",
+  "court",
+  "prosecutions",
+  "\u0637\u0644\u0628\u0627\u062a_\u0627\u0644\u0645\u062d\u0627\u0645\u064a",
+  "\u0627\u062e\u0631_\u0642\u0631\u0627\u0631",
+  "links"
+ ],
+ "fields": [
+  {
+   "fieldname": "number_of_roles",
+   "fieldtype": "Float",
+   "label": "\u0639\u062f\u062f \u0627\u0644\u062c\u0644\u0633\u0627\u062a"
+  },
+  {
+   "fieldname": "name_of_customer",
+   "fieldtype": "Link",
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0645\u0648\u0643\u0644",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "adjective",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0635\u0641\u0629"
+  },
+  {
+   "fieldname": "name_of_rival",
+   "fieldtype": "Data",
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u062e\u0635\u0645"
+  },
+  {
+   "fieldname": "number_of_case",
+   "fieldtype": "Float",
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u0642\u0636\u064a\u0647"
+  },
+  {
+   "fieldname": "type_of_case",
+   "fieldtype": "Data",
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u0642\u0636\u064a\u0647"
+  },
+  {
+   "fieldname": "date_of_role",
+   "fieldtype": "Date",
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u062c\u0644\u0633\u0629"
+  },
+  {
+   "fieldname": "court",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0645\u062d\u0643\u0645\u0647 ",
+   "options": "Courts"
+  },
+  {
+   "fieldname": "prosecutions",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u062a\u064a\u0627\u0628\u0647",
+   "options": "Prosecutions"
+  },
+  {
+   "fieldname": "\u0637\u0644\u0628\u0627\u062a_\u0627\u0644\u0645\u062d\u0627\u0645\u064a",
+   "fieldtype": "Small Text",
+   "label": "\u0637\u0644\u0628\u0627\u062a \u0627\u0644\u0645\u062d\u0627\u0645\u064a"
+  },
+  {
+   "fieldname": "\u0627\u062e\u0631_\u0642\u0631\u0627\u0631",
+   "fieldtype": "Data",
+   "label": "\u0627\u062e\u0631 \u0642\u0631\u0627\u0631"
+  },
+  {
+   "fieldname": "links",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0631\u0627\u0628\u0637"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-28 23:29:10.081391",
+ "modified_by": "Administrator",
+ "module": "\u0627\u062f\u0627\u0631\u0629 \u0627\u0644\u0642\u0636\u0627\u064a\u0627",
+ "name": "Court sessions",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
